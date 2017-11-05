@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">NationInfo</string>
+    <string name="nation">Nation</string>
+    <string name="capital">capital</string>
+    <string name="nation_argentina">아르헨티나</string>
+    <string name="capital_argentina">부에노스아이레스</string>
+    <string name="nation_belgium">벨기에</string>
+    <string name="capital_belgium">브뤼셀</string>
+    <string name="nation_brazil">브라질</string>
+    <string name="capital_brazil">브라질리아</string>
+    <string name="nation_canada">캐나다</string>
+    <string name="capital_canada">오타와</string>
+    <string name="nation_china">중국</string>
+    <string name="capital_china">베이징</string>
+    <string name="nation_croatia">크로아티아</string>
+    <string name="capital_croatia">자그레브</string>
+    <string name="nation_czech">체코</string>
+    <string name="capital_czech">프라하</string>
+    <string name="nation_germany">독일</string>
+    <string name="capital_germany">베를린</string>
+    <string name="nation_ghana">가나</string>
+    <string name="capital_ghana">아크라</string>
+    <string name="nation_greece">그리스</string>
+    <string name="capital_greece">아테네</string>
+    <string name="nation_korea">대한민국</string>
+    <string name="capital_korea">서울</string>
+    <string name="nation_norway">노르웨이</string>
+    <string name="capital_norway">오슬로</string>
+    <string name="nation_united_states">미국</string>
+    <string name="capital_united_states">워싱턴</string>
+    <string name="detail_tag_location">위치</string>
+    <string name="detail_tag_capital">수도</string>
+    <string name="detail_tag_volume">면적</string>
+    <string name="detail_tag_weather">기후</string>
+    <string name="detail_tag_language">언어</string>
+</resources>
