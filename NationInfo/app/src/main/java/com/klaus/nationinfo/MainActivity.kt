@@ -9,6 +9,7 @@ import android.support.v7.widget.RecyclerView
 import android.util.Log
 import android.view.View
 import android.widget.TextView
+import com.klaus.nationinfo.R.id.nation_list
 
 /**
  * 어플을 실행할 때 가장 처음에 실행되는 부분이다.
@@ -21,7 +22,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState) // 상태 저장을 해야하는 경우에 사용한다.
         setContentView(R.layout.activity_main) // 어떤 Layout 을 사용하는지 명시해준다.
         // Layout 에 그려져 있는 RecyclerListView 를 불러온다.
-        var recycleListView = findViewById<RecyclerView>(R.id.nation_list) as RecyclerView
+        //var recycleListView = findViewById<RecyclerView>(R.id.nation_list) as RecyclerView
+        // 리소스 아이디를 이렇게 불러오는 것도 가능
+        // -> Kotlin Extensions 라이브러리 사용 시에 가능
+        var recycleListView = findViewById<RecyclerView>(nation_list) as RecyclerView
         recycleListView.layoutManager = LinearLayoutManager(this)
         // values 에 array.xml 에 있는 nation_flag 라는 array 리소스를 불러온다.
         var typeArray: TypedArray = resources.obtainTypedArray(R.array.nation_flag)
