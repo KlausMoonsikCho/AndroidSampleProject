@@ -10,21 +10,27 @@ import java.io.InputStreamReader
 
 /**
  * Created by chomoonsik on 2017. 11. 5..
+ * 선택된 국가에 대해서 자세한 정보를 JSON 에서 가져와서 출력해주는 액티비티이다.
  */
 class NationDetailActivity : AppCompatActivity() {
+    // 어느 클래스에서든 모두 접근가능한 변수로 아래와 같이 정의해준다.
     companion object {
         val EXTRA_NATION_NAME = "nation_name"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        // 인텐트로 국가명을 받아온다.
         val nation = intent.getStringExtra(EXTRA_NATION_NAME)
-        setContentView(R.layout.activity_nation_detail)
-        val data:NationDetailData? = getDataFromName(nation)
-        img_flag.setImageResource(getResourId(nation))
-        initView(data)
+        setContentView(R.layout.activity_nation_detail) // 어떤 Layout 에서 그려지는 명시해준다.
+        val data:NationDetailData? = getDataFromName(nation) // JSON 에서 자세한 정보를 가져온다.
+        img_flag.setImageResource(getResourId(nation)) // 국가명으로 이미지 리소스 ID 를 가져온다.
+        initView(data) // 각 뷰를 초기화 해준다.
     }
 
+    /**
+     * JSON 에서 데이터를 가지고 올 떄 사용한다.
+     */
     private fun getDataFromName(selected:String):NationDetailData? {
         val gson: Gson = GsonBuilder().create()
         val inputStream:InputStream = assets.open("nation_data.json")
@@ -39,6 +45,9 @@ class NationDetailActivity : AppCompatActivity() {
         return null
     }
 
+    /**
+     * 국가명을 가지고 이미지 리소스 ID 를 리턴해준다.
+     */
     private fun getResourId(selected: String) :Int {
         var resourId = 0;
         when(selected) {
@@ -85,6 +94,9 @@ class NationDetailActivity : AppCompatActivity() {
         return resourId
     }
 
+    /**
+     * 각 뷰를 NationDetailData 를 이용해서 초기화 해준다.
+     */
     private fun initView(data:NationDetailData?) {
         txt_name.text = data?.name
         capital.text = data?.capital

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.klaus.nationinfo.MainActivity">
-
+    <!-- MainActivity 액티비티에 그려지는 부분으로 여기서는 RecyclerView 만 그려준다. -->
     <android.support.v7.widget.RecyclerView
         android:id="@+id/nation_list"
         android:layout_width="match_parent"

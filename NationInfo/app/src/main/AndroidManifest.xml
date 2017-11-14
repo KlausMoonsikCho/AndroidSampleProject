@@ -9,13 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <!-- 앱 실행 시에 가장 처음으로 실행이 되는 액티비티 -->
         <activity android:name=".MainActivity">
+            <!-- 가장 처음에 실행되는 액티비티를 시스템에 알려주는 intent-filter 이다. -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!-- 앱 실행 후에 선택한 국가에 대한 자세한 사항을 보여주는 액티비티 -->
         <activity android:name=".NationDetailActivity">
         </activity>
     </application>
