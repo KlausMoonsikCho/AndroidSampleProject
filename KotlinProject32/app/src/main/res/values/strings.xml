@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">KotlinProject32</string>
+    <string name="odd_num">홀수</string>
+    <string name="even_num">짝수</string>
+</resources>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">RegisterUsers</string>
+    <string name="input_name">이름을 넣으세요</string>
+    <string name="show_btn">Show</string>
+    <string name="exit_btn">Exit</string>
+    <string name="default_name">No Name</string>
+    <string name="default_telnum">No TelNum</string>
+    <string name="label_save_name">이름 : </string>
+    <string name="label_save_age">나이 : </string>
+    <string name="label_save_telnum">전화번호 : </string>
+    <string name="label_save_btn">추 가</string>
+    <string name="label_save_up_btn">업데이트</string>
+    <string name="set_permission">권한 설정</string>
+    <string name="set_permission_message">이미지 썸네일을 만들기 위해서 저장권한이 필요합니다. 승인하지 않으면 이미지를 설정할 수 없습니다.</string>
+    <string name="go_to_set_permission">설정하러 가기</string>
+</resources>
