@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.klaus.myfragmentapp.MainActivity">
+    <LinearLayout
+        android:id="@+id/Activity_Fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- Fragment 사용 시에 유의점
+             1. android:name 또는 class 를 반드시 명시한다.
+             2. 화면 전환 시에 액티비티를 새로 생성하지 않아도 사용할 수 있다.
+             3. Fragment 도 Activity 와 동일하게 생명주기를 가진다. -->
+        <fragment
+            android:id="@+id/fragment_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:name="com.klaus.myfragmentapp.fragment.FragmentA"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

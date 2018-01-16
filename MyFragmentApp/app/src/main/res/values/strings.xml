@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MyFragmentApp</string>
+    <string name="fragment_btn">Fragment A Button</string>
+    <string name="fragment_txt">Fragment Test</string>
+    <string name="fragmentb_btn">Fragment B Button</string>
+</resources>
