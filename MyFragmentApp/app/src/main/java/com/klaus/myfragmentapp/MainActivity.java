@@ -14,12 +14,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        // Fragment 를 정의하기 위해서 사용한다.
         mFragmentManager = getFragmentManager();
         FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
         FragmentA fragmentA = new FragmentA();
         fragmentA.setContext(this);
         fragmentTransaction.add(R.id.fragmentViewGroup, fragmentA);
+        // Fragment 에서 정의한 옵션을 정의하기 위해서 반드시 아래 commit 함수를 사용해야한다.
         fragmentTransaction.commit();
     }
 }

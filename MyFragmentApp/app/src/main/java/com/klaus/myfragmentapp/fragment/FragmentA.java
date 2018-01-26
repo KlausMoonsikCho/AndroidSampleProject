@@ -19,6 +19,24 @@ import com.klaus.myfragmentapp.R;
  * Created by chomoonsik on 2018. 1. 14..
  */
 
+/**
+ * Fragment Life Cycle
+ * 1. Fragment is added
+ * 2. onAttatch()
+ * 3. onCreate()
+ * 4. onCreateView()
+ * 5. onActivityCreated()
+ * 6. onStart()
+ * 7. onResume()
+ * 8. Fragment is active
+ * 9. onPause()
+ * 10. onStop()
+ * 11. onDestroyView()
+ * 12. onDestroy()
+ * 13. onDetach()
+ * 14. Fragment is destroyed
+ * => 11번에서 재 생성 시에 4번에서 다시 실행가능하다.
+ */
 public class FragmentA extends Fragment {
     public static final String TAG = "FragmentA";
 
@@ -38,6 +56,9 @@ public class FragmentA extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         //return super.onCreateView(inflater, container, savedInstanceState);
+        // ViewGroup 을 생성하는 부분이며 여기에 Fragment 를 정의한 xml 파일을 적용한다.
+        // 마지막 파라미터는 레이아웃이 두번째 ViewGroup 에 첨부되야하는지를 나타내는 부울 값인데 시스템이 이미 container
+        // 내에 삽입하고 있기 때문에 true 로 전달하면, 최종 레이아웃에 중복된 ViewGroup 을 생성되기 때문입니다.
         return inflater.inflate(R.layout.fragment_layout, container, false);
     }
 

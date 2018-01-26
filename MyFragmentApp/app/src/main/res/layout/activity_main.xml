@@ -10,9 +10,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <!-- Fragment 사용 시에 유의점
-             1. android:name 또는 class 를 반드시 명시한다.
+             1. android:name 또는 class 를 반드시 명시한다. 명시하지 않으면, NullpointException 발생시켜 종료된다.
              2. 화면 전환 시에 액티비티를 새로 생성하지 않아도 사용할 수 있다.
-             3. Fragment 도 Activity 와 동일하게 생명주기를 가진다. -->
+             3. Fragment 도 Activity 와 동일하게 생명주기를 가진다.
+             4. LinearLayout, RelativeLayou 에서 지원되어서 반드시 그 내부에서 정의한다.
+         -->
         <fragment
             android:id="@+id/fragment_layout"
             android:layout_width="wrap_content"

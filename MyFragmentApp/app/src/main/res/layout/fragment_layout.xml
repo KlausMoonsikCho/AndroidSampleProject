@@ -2,6 +2,10 @@
 <android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <!--
+     1. 실제 프레임워크가 출력이되는 Layout 이다.
+     2. 같은 Layout 을 사용해도 되고, 각각 다른 Layout 을 사용해도 무방하다.
+    -->
     <RelativeLayout
         android:id="@+id/fragmentViewGroup"
         android:layout_width="match_parent"
