@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MySharedPreferences</string>
+    <string name="text_value_1">Hello Garaxy</string>
+    <string name="text_value_2">Hello IPhone</string>
+    <string name="text_value_def">Hello World!</string>
+    <string name="text_change_btn">Change</string>
+</resources>
