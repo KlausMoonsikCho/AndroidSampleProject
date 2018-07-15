@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.moonsikcho.countdonwtest.MainActivity">
+
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layoutDirection="ltr">
+
+        <!-- hour -->
+        <NumberPicker
+            android:id="@+id/hour_picker"
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"/>
+        <!-- minute -->
+        <NumberPicker
+            android:id="@+id/minute_picker"
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dip"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginLeft="5dip"
+            tools:ignore="RtlCompat" />
+        <!-- second -->
+        <NumberPicker
+            android:id="@+id/second_picker"
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dip"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            tools:ignore="RtlCompat" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/CountDown_Start_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.677" />
+
+</android.support.constraint.ConstraintLayout>
